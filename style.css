@@ -1,0 +1,90 @@
+h1
+{
+    text-align: center;
+    font-family:'Courier';
+    font-size: calc(3vw + 3vh);
+    margin:0;
+    color:blue;
+}
+
+body
+{
+    font-family:'Courier';
+}
+.calculator-grid
+{   
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(7,80px);
+    grid-template-rows: minmax(120px,auto) 50px repeat(4,100px);
+}
+
+.output
+{
+    color: black;
+    background-color: #B7FA86;
+    grid-column: 1/8;
+    display: flex;
+    border: 15px solid black;
+    height:auto;
+    flex-direction: column;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.calculator-grid>button
+{
+    color:white;
+    cursor: pointer;
+    font-size: 2rem;
+    border:1px solid white;
+    background-color:black;
+    border-radius: 1px;
+}
+
+.calculator-grid>button:hover
+{
+    background-color: rgb(177, 162, 162);
+}
+
+.calculator-grid>button:disabled
+{
+    cursor:context-menu;
+}
+
+#add
+{
+    grid-row:span 2;
+}
+
+#solarpanel
+{
+    grid-column: span 3;
+    background-color: rgb(199, 98, 98);
+    font-size: 25px;
+}
+
+#backblue
+{
+    background-color: rgb(114, 160, 245);
+}
+
+#empty
+{
+    grid-row: span 3;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.input
+{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size:50px;
+}
